@@ -4,3 +4,7 @@
 setup\.py
 
 setup\.cfg
+
+MANIFEST
+
+dist/

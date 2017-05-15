@@ -2,3 +2,5 @@
 \.idea/
 
 setup\.py
+
+setup\.cfg

@@ -51,14 +51,14 @@ class Trivia:
     def __init__(self, with_token: bool):
         """
         Initialize an instance of the Trivia class
-        :param with_token: whether if the instance uses a session token
+        :param with_token: If True then the instance will uses a session token
         """
         self.token = _get_token() if with_token else None
 
     def request(self, num_questions: int, category: Category = None,
                 diffculty: Diffculty = None, type_: Type = None):
         """
-        Send a api
+        Send an api request to https://opentdb.com/
         Limitations:
         Only 1 Category can be requested per API Call.
         To get questions from any category, don't specify a category.
@@ -76,6 +76,9 @@ class Trivia:
         :return: the api call response
 
         :rtype: dict
+
+        :raises: ValueError when the num_questions parameter is less than 1
+        or greater than 50
         """
         if num_questions < 1 or num_questions > 50:
             raise ValueError

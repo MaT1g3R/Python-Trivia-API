@@ -1,7 +1,7 @@
 # Python Trivia API
 ## Install
 ```
-pip install pytrivia
+pip install Python-Trivia-API
 ```
 
 ## Requirements

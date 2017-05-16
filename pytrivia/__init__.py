@@ -15,7 +15,7 @@ class Category(Enum):
     Film = 11
     Music = 12
     Musicals_Theatres = 13
-    TV = 14
+    Tv = 14
     Video_Games = 15
     Board_Games = 16
     Nature = 17

@@ -122,3 +122,4 @@ class Trivia:
             url += '&type={}'.format(type_.value)
         if self.token is not None:
             url += '&token={}'.format(self.token)
+        return url

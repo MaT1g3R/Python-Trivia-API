@@ -4,11 +4,6 @@
 pip install Python-Trivia-API
 ```
 
-## Requirements
-```
-requests
-```
-
 ## Example usage
 ```Python
 from pytrivia import Category, Diffculty, Type, Trivia
